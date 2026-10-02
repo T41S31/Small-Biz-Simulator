@@ -1,15 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <!-- 
     Small Biz Simulator Ver.01 
     Start 2026.09.23
  -->
-<html lang ="ja">
-    <head>
+<html lang="ja"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Small Biz Simulator</title>
 
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="Small%20Biz%20Simulator_files/style_T_tc.css">
     </head>
     <body>
         <header>
@@ -17,67 +17,42 @@
         </header>
 
         <main>
-            <section class ="intro">
+            <section class="intro">
                 <h2>あなたのお店は "いくら" 売れば黒字になる？</h2>
                 <p>事業の数字を入力すると、黒字化に必要な売上や客数、様々な経営指標を計算できます！</p>
             </section>
 
-            <section class ="input-form"><!--入力フォーム-->
-                <div class ="form-row monthly-sales"><!--月間売上高-->
+            <section class="input-form"><!--入力フォーム-->
+                <div class="form-row monthly-sales"><!--月間売上高-->
                     <label for="monthly-sales">月間売上高</label>
-                    <input
-                        type="number"
-                        id="monthly-sales"
-                        name="monthly-sales"
-                        placeholder="1000000"
-                    >
+                    <input type="number" id="monthly-sales" name="monthly-sales" placeholder="1000000" value="0">
                     <span>円</span>
                 </div>
-                <div class ="form-row monthly-fixed-cost"><!--月間固定費-->
+                <div class="form-row monthly-fixed-cost"><!--月間固定費-->
                     <label for="monthly-fixed-cost">月間固定費</label>
-                    <input 
-                        type="number"
-                        id="monthly-fixed-cost"
-                        name="monthly-fixed-cost"
-                        placeholder="1000000"
-                    >
+                    <input type="number" id="monthly-fixed-cost" name="monthly-fixed-cost" placeholder="1000000">
                     <span>円</span>
                 </div>
-                <div class ="form-row cost-of-sales-ratio"><!--原価率-->
+                <div class="form-row cost-of-sales-ratio"><!--原価率-->
                     <label for="cost-of-sales-ratio">原価率</label>
-                    <input 
-                        type="number"
-                        id="cost-of-sales-ratio"
-                        name="cost-of-sales-ratio"
-                        placeholder="1000000"
-                    >
+                    <input type="number" id="cost-of-sales-ratio" name="cost-of-sales-ratio" placeholder="1000000">
                     <span>円</span>
                 </div>
-                <div class ="form-row monthly-variable-cost"><!--その他の月間変動費-->
+                <div class="form-row monthly-variable-cost"><!--その他の月間変動費-->
                     <label for="monthly-variable-cost">その他の月間変動費</label>
-                    <input 
-                        type="number"
-                        id="monthly-variable-cost"
-                        name="monthly-variable-cost"
-                        placeholder="1000000"
-                    >
+                    <input type="number" id="monthly-variable-cost" name="monthly-variable-cost" placeholder="1000000">
                     <span>円</span>
                     <h5>※決済手数料・販売手数料・包装材など</h5>
                 </div>
-                <div class ="form-row average-customer-spend"><!--客単価-->
+                <div class="form-row average-customer-spend"><!--客単価-->
                     <label for="average-customer-spend">客単価</label>
-                    <input 
-                        type="number"
-                        id="average-customer-spend"
-                        name="average-customer-spend"
-                        placeholder="1000"
-                    >
+                    <input type="number" id="average-customer-spend" name="average-customer-spend" placeholder="1000">
                     <span>円</span>
                 </div>
-                <div class ="form-row business-days"><!--営業日数-->
+                <div class="form-row business-days"><!--営業日数-->
                     <label for="business-days">営業日数</label>
                     <select name="business-days" id="business-days">
-                        <option value="">選択してください</option>
+                        <option value="" selected="selected">選択してください</option>
                         <option value="1">1日</option>
                         <option value="2">2日</option>
                         <option value="3">3日</option>
@@ -114,15 +89,11 @@
 
             </section>
 
-            <section class="start-button-area"><!--計算実行ボタン-->
-                <button class ="start-button" type ="button">計算開始</button>
-            </section>
-
-            <section class ="result">
+            <section class="result">
                 <!--ここに計算結果を表示する-->
             </section>
 
-            <section class ="graph">
+            <section class="graph">
                 <!--ここにグラフを表示する-->
             </section>
         </main>
@@ -131,8 +102,7 @@
             <p>Small Biz Simulator</p>
         </footer>
 
-        <script src = "script.js"></script>
-    </body>
+        <script src="Small%20Biz%20Simulator_files/script_T_tc.js"></script>
+    
 
-
-</html>
+</body></html>
